@@ -1,0 +1,145 @@
+.header {
+    width: 100%;
+    position: absolute;
+    padding: 20px 0;
+    z-index: 1;
+    transition: .15s all;
+    &.active {
+        background: rgba(243, 240, 234, 0.90);
+    }
+    &.submenu {
+        padding-bottom: 210px;
+    }
+    &::hover {
+        background: rgba(243, 240, 234, 0.90);
+    }
+    &__list {
+        list-style-type: none;
+        &-link {
+            color: #fff;
+            font-family: "Cormorant Garamond";
+            font-size: 22px;
+            font-weight: 500;
+            text-decoration-line: underline;
+            &.active {
+                color: #313131;
+            }
+        }
+        &-item {
+            position: relative;
+        }
+    }
+    &__sublist {
+        position: absolute;
+        padding-top: 30px;
+        top: 0px;
+        left: 0px;
+        width: 400px;
+        display: none;
+        list-style-type: none;
+        &.active {
+            display: flex;
+        }
+    }
+    &__logo {
+        cursor: pointer;
+        &-mobile {
+            display: none;
+        }
+    }
+    &__cart {
+        position: relative;
+        cursor: pointer;
+        &-num {
+            top: -10px;
+            left: -10px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #DAC4E1;
+
+            color: #FFF;
+            font-family: "Myanmar MN";
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &__burger {
+        display: none;
+    }
+}
+
+.mob {
+    display: none;
+}
+
+
+
+@media (max-width: 992px) {
+    .header__logo {
+        width: 200px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .header {
+       &__logo {
+        &-offer {
+            gap: 40px;
+        }
+       }
+   }
+}
+
+@media (max-width: 576px) {
+    .mob {
+        display: block;
+    }
+    .header {
+        &__offer {
+            position: relative;
+            justify-content: space-between;
+        }
+        &__list {
+            display: none;
+            position: absolute;
+            top: 49px;
+            left: -20px;
+            background: rgba(243, 240, 234, 0.90);
+            width: calc(100% + 40px);
+            padding: 35px 20px;
+            height: 100vh;
+            &.active {
+                display: block !important;
+            }
+            &-link {
+                font-size: 14px;
+                text-decoration: none;
+            }
+            &-sub {
+                margin-top: 64px;
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+            }
+        }
+        &__logo {
+            width: 150px;
+        }
+        &__burger {
+            display: block;
+        }
+        &__sublist {
+            display: block;
+            position: relative;
+            padding-top: 0;
+        }
+        &__social {
+            margin-top: 64px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.footer {
+    &__wrapper {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__logo {
+        margin: 0 auto;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__logo {
+            width: 176px;
+            margin: 0 auto;
+        }
+        &__link {
+            font-size: 12px;
+        }
+        &__list {
+            gap: 12px;
+        }
+        &__offer {
+            &-2 {
+                flex-direction: column;
+            }
+        }
+    }
+}

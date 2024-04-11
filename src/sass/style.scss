@@ -1,0 +1,55 @@
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(243, 240, 234, 0.90);
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.wrapper {
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+ 
+@import 'libs/olrosa-lib';
+@import 'blocks/other';
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/gallery';
+@import 'blocks/accessory';
+@import 'blocks/footer';  
+
+@import 'blocks/about';
+@import 'blocks/delivery';
+@import 'blocks/consultation';
+@import 'blocks/thanks';
+@import 'blocks/collection';
+
+@import 'blocks/card';
+@import 'blocks/empty';
+
+@import 'blocks/cart';
+@import 'blocks/offer';

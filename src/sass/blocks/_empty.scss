@@ -1,0 +1,25 @@
+.empty {
+    padding: 250px 0 100px 0;
+    .h1 {
+        color: #313131;
+        max-width: 420px;
+    }
+    p {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &__offer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__descr {
+        max-width: 400px;
+    }
+    &__subtitle {
+        max-width: 580px !important;
+        margin: 0 auto;
+        margin-top: 170px;
+    }
+}

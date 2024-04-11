@@ -1,0 +1,252 @@
+.cart {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transition: .3s all;
+    &.active {
+        right: 0;
+        transition: .3s all;
+    }
+    p {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &-header {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 170px;
+        min-height: 60px;
+    }
+    &-content {
+        padding: 0 40px 0 70px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        background:#F3F0EA;
+        z-index: 1;
+        overflow: auto;
+    }
+    &-items {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+    &-item {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        gap: 80px;
+        overflow-x: auto;
+    }
+    &-img {
+        width: 328  px;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-descr {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-size {
+        margin-top: 44px;
+    }
+    &-title {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &-price {
+        &-offer {
+            color: #313131;
+            font-family: "Myanmar MN";
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
+    &-avalible {
+        margin-top: 24px;
+    }
+    &-count {
+        color: #313131;
+        font-family: "Myanmar MN";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &-plus, &-minus {
+        color: #313131;
+        font-family: "Myanmar MN";
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    &-line {
+        width: 1px;
+        height: 100%;
+        background-color: #313131;
+    }
+    &-remove {
+        color: #838383;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    &-additionals {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    &-additional {
+        padding: 60px 0;
+        &-item {
+            width: calc(25% - 10px);
+            gap: 24px;
+        }
+        &-counts {
+            width: 50%;
+            margin: 0 auto;
+        }
+        &-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        &-btn {
+            display: flex;
+            width: 100%;
+            padding: 10px 5px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: none;
+
+            color: #313131;
+            font-family: "Cormorant Garamond";
+            font-size: 22px;
+            font-weight: 500;
+        }
+        &-descr {
+            font-size: 20px !important;
+        }
+    }
+    &-final {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &-cost {
+        color: #313131;
+        font-family: "Myanmar MN";
+        font-size: 30px;
+        font-weight: 400;
+    }
+    &-close {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+    .fw-600 {
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cart {
+        &-content {
+            padding: 0 30px;
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cart {
+        &-content {
+            padding-bottom: 100px;
+        }
+        &-item {
+            
+            height: 250px;
+            gap: 30px;
+           
+        }
+        &-additional {
+            &-item {
+                display: none;
+                width: calc(50% - 10px);
+                &:nth-child(1) {
+                    display: block;
+                }
+                &:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+        &-title {
+            font-size: 22px;
+        }
+        &-price {
+            font-size: 20px;
+        }
+        &-remove {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .cart {
+        p {
+            font-size: 12px;
+        }
+        &-content {
+            padding-bottom: 100px;
+            width: 100%;
+        }
+        &-title {
+            font-size: 12px;
+        }
+        &-price {
+            font-size: 8px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        &-size {
+            margin-top: 14px;
+        }
+        &-remove {
+            font-size: 12px;
+        }
+        &-header {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            min-height: 60px;
+        }
+        &-additional {
+            &-descr {
+                font-size: 12px;
+            }
+            &-btn {
+                margin-top: 24px;
+                padding: 10px;
+                font-size: 12px;
+            }
+            &-counts {
+                margin-top: 24px;
+            }
+        }
+    }
+}

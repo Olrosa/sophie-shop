@@ -1,0 +1,26 @@
+.consultation {
+    &__wrapper {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    &__input {
+        width: 312px;
+        &-offer {
+            margin-top: -44px;
+        }
+    }
+    &__area {
+        margin-top: 40px;
+        width: 100%;
+        height: 157px;
+    }
+    &__form {
+        margin-top: 44px;
+    }
+    &__btn {
+        display: block;
+        width: 340px;
+        margin: 0 auto;
+        margin-top: 44px;
+    }
+}

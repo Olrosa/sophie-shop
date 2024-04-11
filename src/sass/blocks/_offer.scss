@@ -1,0 +1,51 @@
+.offer {
+    padding: 250px 0 100px 0;
+    p {
+        color: #313131;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .h2 {
+        text-align: left;
+    }
+    &__order {
+        flex: 65;
+        border-right: 1px solid #313131;
+        min-height: 500px;
+    }
+    &__form {
+        padding-right: 100px;
+    }
+    &__cart {
+        padding-left: 100px;
+        flex: 35;
+        
+    }
+    &__input {
+        flex: 1;
+        &::placeholder {
+            color: #838383;
+        }
+    }
+    &__area {
+        width: 100%;
+        height: 165px;
+    }
+    &__title {
+        color: #838383;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &__img {
+        width: 100px;
+        height: 130px;
+        object-fit: cover;
+    }
+    &__item {
+        p {
+            color: #838383 !important;
+        }
+    }
+}

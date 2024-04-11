@@ -1,0 +1,27 @@
+.delivery {
+    padding: 250px 0 100px 0;
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .h1 {
+        color: #313131;
+    }
+    &__box {
+        gap: 100px;
+        margin-top: 64px;
+        &:nth-child(1) {
+            margin-top: 150px;
+        }
+        &-item {
+            max-width: 300px;
+            color: #313131;
+            font-family: "Cormorant Garamond";
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .mw-none {
+            max-width: none;
+        }
+    }
+}

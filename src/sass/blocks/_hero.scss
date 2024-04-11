@@ -1,0 +1,33 @@
+.hero {
+    background: url('../../img/header_bg.png') center / cover no-repeat;
+    padding: 300px 0 250px 0;
+    &__subtitle {
+        color: #FFF;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 18px; /* 81.818% */
+    }
+    &__box {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__box {
+            width: 75%;
+        }
+    }
+}
