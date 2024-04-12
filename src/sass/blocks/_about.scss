@@ -65,3 +65,58 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .about {
+        &__img {
+            height: 900px;
+        }
+        &__list {
+            right: 100px;
+        }
+        &__text-block {
+            padding: 0 20px;
+            left: 100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 0;
+        &__img {
+            &-block {
+                width: 100%;
+            }
+            height: 1100px;
+        }
+        &__list {
+            position: relative;
+            right: auto;
+            top: auto;
+            padding: 0 20px;
+        }
+        &__text-block {
+            padding: 0 0;
+            position: relative;
+            left: auto;
+            top: auto;
+        }
+        &__descr-block {
+            width: 100%;
+            padding: 0 20px;
+        }
+        &__offer {
+            flex-direction: column;
+        }
+        &__item {
+            &.active {
+                &::before {
+                   display: none;
+                }
+            }
+            color: #313131;
+          
+        }
+    }
+}

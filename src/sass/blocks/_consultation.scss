@@ -24,3 +24,27 @@
         margin-top: 44px;
     }
 }
+
+@media (max-width: 768px) {
+    .consultation {
+        &__input-offer {
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__input {
+            width: 100%;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation {
+        &__form {
+            margin-top: 44px;
+        }
+    }
+}

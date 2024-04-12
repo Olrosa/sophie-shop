@@ -31,6 +31,12 @@ a {
     }
 }
 
+@media (max-width: 390px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+}
+
 
  
 @import 'libs/olrosa-lib';
