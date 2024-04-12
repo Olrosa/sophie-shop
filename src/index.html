@@ -9,6 +9,7 @@
     <meta http-equiv="content-language" content="ru"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -333,41 +334,49 @@
                 Аксессуары
             </h2>
             <span class="line"></span>
-            <div class="accessory__items flex-offer gap-10 mt-20 jus-con-sb">
-                <div class="accessory__item gap-20">
-                    <img src="img/ac1.png" class="accessory__img">
-                    <div class="flex-offer jus-con-sb accessory__descr">
-                        <span>
-                            Сумочка на фермуаре
-                            
-                        </span>
-                        <span>
-                            3250 ₽
-                        </span>
+            <div class="swiper accessory__slider">
+                <div class="accessory__items flex-offer gap-10 mt-20 jus-con-sb swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="accessory__item gap-20">
+                            <img src="img/ac1.png" class="accessory__img">
+                            <div class="flex-offer jus-con-sb accessory__descr">
+                                <span>
+                                    Сумочка на фермуаре
+                                    
+                                </span>
+                                <span>
+                                    3250 ₽
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accessory__item gap-20">
-                    <img src="img/ac2.png" class="accessory__img">
-                    <div class="flex-offer jus-con-sb accessory__descr">
-                        <span>
-                            Кошелечек
-                            
-                        </span>
-                        <span>
-                            2150 ₽
-                        </span>
+                    <div class="swiper-slide">
+                        <div class="accessory__item gap-20">
+                            <img src="img/ac2.png" class="accessory__img">
+                            <div class="flex-offer jus-con-sb accessory__descr">
+                                <span>
+                                    Кошелечек
+                                    
+                                </span>
+                                <span>
+                                    2150 ₽
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accessory__item gap-20" >
-                    <img src="img/ac3.png" class="accessory__img">
-                    <div class="flex-offer jus-con-sb accessory__descr">
-                        <span>
-                            Кошелёк «Мишка»
-                            
-                        </span>
-                        <span>
-                            5950 ₽
-                        </span>
+                    <div class="swiper-slide">
+                        <div class="accessory__item gap-20" >
+                            <img src="img/ac3.png" class="accessory__img">
+                            <div class="flex-offer jus-con-sb accessory__descr">
+                                <span>
+                                    Кошелёк «Мишка»
+                                    
+                                </span>
+                                <span>
+                                    5950 ₽
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -435,6 +444,8 @@
         </div>
     </footer>
 
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body> 
 </html>

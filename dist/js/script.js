@@ -185,6 +185,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    // SLIDER
+    const accessorySlider = new Swiper('.accessory__slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+
     
     
     
