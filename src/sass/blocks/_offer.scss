@@ -49,3 +49,61 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .offer {
+        .wrapper {
+            padding: 0 20px;
+        }
+        &__form {
+            padding-right: 30px;
+        }
+        &__cart {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .offer {
+        &__offer {
+            flex-direction: column;
+            gap: 60px;
+        }
+        &__form {
+            padding-right: 0;
+          
+        }
+        &__cart {
+            order: 1;
+            padding-left: 0;
+        }
+        &__order {
+            border-right: none;
+            order: 2;
+        }
+        &__input {
+            width: calc(50% - 20px);
+            flex: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .offer {
+        p {
+            font-size: 12px;
+        }
+        padding: 150px 0 0 0;
+        &__input {
+            width: 100%;
+            font-size: 12px;
+        }
+        &__title {
+            font-size: 12px;
+        }
+        &__text {
+            font-size: 22px !important;
+        }
+    }
+}

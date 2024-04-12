@@ -23,3 +23,34 @@
         margin-top: 170px;
     }
 }
+
+@media (max-width: 768px) {
+    .empty {
+        .h1 {
+            max-width: none;
+            text-align: center;
+        }
+        &__offer {
+            max-width: auto;
+            flex-direction: column;
+        }
+        &__descr {
+            max-width: none;
+        }
+        &__subtitle {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .empty {
+        padding: 150px 0 0 0;
+        p {
+            font-size: 12px;
+        }
+        &__subtitle {
+            margin-top: 50px;
+        }
+    }
+}
