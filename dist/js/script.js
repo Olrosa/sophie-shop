@@ -1,4 +1,51 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    /// PARALLAX
+
+    document.addEventListener('scroll', function() {
+        /* const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const parallaxSpeed = 0.5;  // Коэффициент скорости параллакса
+    
+        // Изменяем позицию фонового изображения в зависимости от прокрутки страницы
+        const parallaxBackground = document.querySelector('.hero');
+        if (parallaxBackground) {
+            parallaxBackground.style.backgroundPositionY = `${-scrollTop * parallaxSpeed}px`;
+        }
+ */
+        /* const galleryItems = document.querySelectorAll('.gallery__item');
+
+        galleryItems.forEach(item => {
+            const rect = item.getBoundingClientRect(); // Получаем позицию элемента относительно viewport
+            const parallaxSpeed = 0.3; // Коэффициент скорости параллакса
+
+            // Вычисляем смещение для параллакса на основе расстояния элемента от начала страницы
+            const parallaxOffset = (window.pageYOffset + rect.top) * parallaxSpeed;
+
+            // Применяем смещение к элементу
+            item.style.transform = `translateY(${parallaxOffset}px)`;
+        }); */
+    });
+
+    /// ABOUT MOBILE NAXUY
+
+
+    const tabTitles = document.querySelectorAll('.about__text-mobile-title');
+    const tabContents2 = document.querySelectorAll('.about__text-mobile-faq');
+
+    tabTitles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            const tabNumber = this.parentElement.getAttribute('data-tab');
+
+            // Удаляем класс active у всех элементов tabContents
+            tabContents2.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+
+            // Добавляем класс active только к выбранному табу
+            const selectedTab = document.querySelector(`.about__text-mobile-faq[data-tab="${tabNumber}"]`);
+            selectedTab.classList.toggle('active');
+        });
+    });
    
 
     // ACTIVE COLOR 
