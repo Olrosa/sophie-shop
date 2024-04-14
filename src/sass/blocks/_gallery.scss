@@ -1,4 +1,13 @@
 .gallery {
+    &__slider-1 {
+        margin-left: 10px;
+        position: relative;
+        overflow: hidden;
+        .swiper-slide {
+            flex-shrink: 0;
+        
+        }
+    }
     &__title {
         margin: 0 auto;
         margin-top: 33px;
@@ -9,9 +18,13 @@
         margin-top: 100px;
         justify-content: center;
     }
+    &__box.swiper-wrapper {
+        flex-wrap: nowrap;
+    }
     &__item {
+        flex-shrink: 0;
         height: 880px;
-        width: calc(33% - 20px);
+        width: 100%;
         object-fit: cover;
         object-position: center center;
         transition: transform 0.2s ease-out;
@@ -21,20 +34,72 @@
         height: 600px;
         object-fit: cover;
     }
+    &__navigation {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
     .gallery {
-        &__item {
-            display: none;
-            width: 100%;
-            &:nth-child(1) {
-                display: block;
-            }
-        }
+        // &__item {
+        //     display: none;
+        //     width: 100%;
+        //     &:nth-child(1) {
+        //         display: block;
+        //     }
+        // }
         &__img {
             width: 50%;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        &__slider-1 {
+            margin-left: 0;
+        }
+        &__navigation {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid #000;
+                cursor: pointer;
+                z-index: 100;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: #000;
+                    svg {
+                        fill: #fff;
+                    }
+                }
+                svg {
+                    fill: #000;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+        }
+        .swiper-button-prev {
+            left: 20px;
+        }
+        .swiper-button-next {
+            right: 20px;
+            transform: rotate(180deg) translateY(50%);
+        }
+    
     }
 }
 

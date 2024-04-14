@@ -233,6 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // SLIDER
+
     const accessorySlider = new Swiper('.accessory__slider', {
         slidesPerView: 2,
         spaceBetween: 10,
@@ -253,7 +254,24 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 
-
+    const gallerySlider1 = new Swiper('.gallery__slider-1', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            },
+            768: {
+                slidesPerView: 3,
+            },
+        },
+    });
     
     
     
