@@ -273,6 +273,25 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
     
+    const gallerySlider2 = new Swiper('.gallery__slider-2', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+        },
+    });
     
     
 
