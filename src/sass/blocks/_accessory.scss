@@ -1,9 +1,15 @@
 .accessory {
+    &__slider {
+        overflow: hidden;
+    }
     &__items {
         margin: 0 auto;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        // overflow: hidden;
     }
     &__item {
-        width: calc(33% - 10px);
+        transition: .3s all;
     }
     &__img {
         width: 100%;
@@ -20,16 +26,14 @@
         font-size: 22px;
         font-weight: 500;
     }
+    .swiper-slide {
+        flex-shrink: 0;
+    }
 }
 
 @media (max-width: 768px) {
     .accessory {
-        &__item {
-            width: calc(50% - 10px);
-            &:nth-child(3) {
-                display: none;
-            }
-        }
+    
     }
 }
 
@@ -37,6 +41,15 @@
     .accessory {
         &__descr {
             font-size: 12px;
+        }
+        &__img {
+            height: 220px;
+        }
+        .swiper-slide .accessory__item {
+            scale: .8;
+        }
+        .swiper-slide.swiper-slide-active .accessory__item {
+            scale: 1;
         }
     }
 }

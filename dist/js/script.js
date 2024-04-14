@@ -234,11 +234,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // SLIDER
     const accessorySlider = new Swiper('.accessory__slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 10,
         breakpoints: {
-            768: {
+            320: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                initialSlide: 1,
+            },
+            576: {
                 slidesPerView: 2,
+                centeredSlides: false,
+                initialSlide: 0,
             },
             1024: {
                 slidesPerView: 3,
