@@ -53,6 +53,7 @@
             margin-left: 0;
         }
         &__navigation {
+            padding: 10px;
             display: block;
             position: absolute;
             top: 50%;
@@ -82,6 +83,11 @@
                     width: 20px;
                     height: 20px;
                 }
+            }
+            svg {
+                height: 28px;
+                width: 24px;
+                fill: white;
             }
             
         }

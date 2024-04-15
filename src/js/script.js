@@ -263,8 +263,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: '.gallery__navigation.swiper-button-next',
+                    prevEl: '.gallery__navigation.swiper-button-prev',
                 },
             },
             768: {
@@ -291,6 +291,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 4,
             },
         },
+    });
+
+    const cartSlider = new Swiper('.cart-slider', {
+        slidesPerView: 2, 
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.cart-navigation.swiper-button-next',
+            prevEl: '.cart-navigation.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+            },
+            400: {
+                slidesPerView: 3,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 4
+            }
+        }
     });
     
     
